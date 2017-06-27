@@ -90,7 +90,8 @@ function start(dbpath) {
               }
             }
           },
-          () => {
+          (success) => {
+            console.log(success ? 'done' : 'failed');
           }
         );
       },
